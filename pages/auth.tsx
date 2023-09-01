@@ -101,7 +101,7 @@ const Auth = () => {
 								onClick={() =>
 									signIn("github", {
 										callbackUrl:
-											"/https://netflix-clone-bice-pi.vercel.app/api/auth/callback/github",
+											"/profiles",
 									})
 								}
 								className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition"
