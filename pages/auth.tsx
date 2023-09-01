@@ -100,7 +100,8 @@ const Auth = () => {
 							<div
 								onClick={() =>
 									signIn("github", {
-										callbackUrl: "/profiles",
+										callbackUrl:
+											"https://netflix-clone-bice-pi.vercel.app/api/auth/callback/github",
 									})
 								}
 								className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition"
