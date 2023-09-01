@@ -98,7 +98,12 @@ const Auth = () => {
 								<FcGoogle size={30} />
 							</div>
 							<div
-								onClick={() => signIn("github", { callbackUrl: "/profiles" })}
+								onClick={() =>
+									signIn("github", {
+										callbackUrl:
+											"https://netflix-clone-bice-pi.vercel.app/auth/callback/github",
+									})
+								}
 								className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition"
 							>
 								<FaGithub size={30} />

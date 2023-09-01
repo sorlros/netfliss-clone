@@ -51,8 +51,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 			const { movieId, seriesId } = req.query;
 
 			const queryId = String(seriesId || movieId);
-
-			// const table = req.query === "movieId" ? "movie" : "series";
+			// req를 통해 들어오는 요청이 series인지 movie인지 분류
+			
 
 			if (!seriesId) {
 				const existingMovie = await prismadb.movie.findUnique({
