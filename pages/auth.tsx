@@ -44,7 +44,7 @@ const Auth = () => {
         email,
         password,
         redirect: false,
-        callbackUrl: '/'
+        callbackUrl: 'https://netflix-clone-bice-pi.vercel.app/api/auth/callback/github'
       });
 
       router.push('/profiles');
